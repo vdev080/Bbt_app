@@ -1,0 +1,140 @@
+.bannerContent {
+  padding-top: 10.5rem;
+  padding-bottom: 5rem;
+}
+.hpBannerImage img {
+  min-height: 685px;
+  object-fit: cover;
+}
+.hpBannerBtnMob {
+  max-width: 29rem;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+  backdrop-filter: blur(8px); /* Chrome and Opera */
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 4rem;
+  border-radius: 4rem;
+}
+.hpBannerBtnMob span {
+  width: 6.6rem;
+  height: 5.3rem;
+  border-radius: 3rem;
+  top: -1rem;
+  right: 3rem;
+  box-shadow: rgba(255, 255, 255, 0.18) 0px 10px 15px -3px,
+    rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
+}
+.hpBannerBtnMob span img {
+  max-width: 2.5rem;
+}
+.bannerSearchBox {
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 3rem;
+  width: 30rem;
+  height: 4.5rem;
+  margin-right: 1.5rem;
+}
+.bannerSearchBox input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1.5rem 4rem 1.2rem 5rem;
+}
+.bannerSearchBox input::placeholder {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.searchIcon,
+.filterBtn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bannerBtnBox a {
+  padding: 1.5rem 8rem 1.5rem 2rem;
+  border-radius: 3rem;
+  height: 4.5rem;
+  letter-spacing: -1px;
+  transition: all 0.5s ease;
+  border: 1px solid #fff;
+}
+.bannerBtnBox a:hover{
+  background-color: transparent;
+  color: #fff;
+  border-color: rgba(128, 128, 128, 1);
+}
+.bannerBtnBox span {
+  width: 4.2rem;
+  height: 2.7rem;
+  border-radius: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  padding: 1rem;
+  transition: all 0.5s ease;
+}
+.bannerBtnBox a:hover span{
+  background-color: #fff;
+}
+.bannerBtnBox a:hover span img{
+  filter: invert(1);
+}
+.bannerBtnBox span img {
+  max-width: 1.5rem;
+  transition: all 0.5s ease;
+}
+.bannerScrollBtn {
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 1440px) {
+  .filterBtn img {
+    width: 1.5rem;
+  }
+  .bannerSearchBox,
+  .bannerBtnBox a {
+    height: 4.9rem;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .bannerSearchBox {
+    width: 32rem;
+    height: 5rem;
+  }
+  .bannerBtnBox a {
+    padding: 1.5rem 9rem 1.5rem 2rem;
+    height: 5rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .bannerBtnBox a {
+    padding: 1.5rem 12rem 1.5rem 2rem;
+    height: 6.7rem;
+    border-radius: 4rem;
+  }
+  .bannerSearchBox {
+    width: 40rem;
+    height: 6.7rem;
+    border-radius: 4rem;
+  }
+  .filterBtn img {
+    width: 2.2rem;
+  }
+  .bannerSearchBox input {
+    font-size: 1.5rem;
+  }
+  .bannerSearchBox input::placeholder {
+    font-size: 1.5rem;
+  }
+  .bannerBtnBox span{
+    width: 5.2rem;
+    height: 3.5rem;
+    right: 1.5rem;
+    padding: 0.5rem;
+  }
+  .bannerBtnBox span img {
+    max-width: 1.8rem;
+  }
+}

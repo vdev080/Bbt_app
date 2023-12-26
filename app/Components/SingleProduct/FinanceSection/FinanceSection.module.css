@@ -1,0 +1,38 @@
+.emiBox{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    max-width: 24rem;
+}
+.emiBox p{
+    width: max-content;
+    padding: 0 1.5rem;
+    left: 50%;
+    top: -1rem;
+    transform: translateX(-50%);
+}
+.emiBox p::before,
+.emiBox p::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.emiBox p::before{
+    left: 0;
+}
+.emiBox p::after{
+    right: 0;
+}
+@media only screen and (min-width: 1024px){
+    .emiBox{
+        max-width: max-content;
+        border-radius: 0.6rem;
+    }
+    .emiBox p{
+        top: -0.8rem;
+    }
+}

@@ -1,0 +1,65 @@
+.popupOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.filterContentWrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filterContentWrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.filterContentWrapper::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 1rem;
+}
+.filterReset {
+  padding: 0.1rem 2rem 0.3rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.filterBrands li {
+  width: 7.7rem;
+  height: 7.7rem;
+  min-width: 7.7rem;
+}
+.filterBrands li.active,
+.budgetItem.active,
+.categoryItem.active{
+  border-color: #000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #fff;
+}
+.budgetItem {
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .filterPopupContent {
+    width: 80%;
+    border-radius: 1.5rem;
+    max-height: 90vh;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .filterPopupContent {
+    width: 70%;
+  }
+  .filterBrands li {
+    width: 10rem;
+    height: 10rem;
+  }
+  .filterBrands li:hover,
+  .budgetItem:hover,
+  .categoryItem:hover {
+    border-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .filterPopupContent {
+    max-width: 1400px;
+  }
+}
